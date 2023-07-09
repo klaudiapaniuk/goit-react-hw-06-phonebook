@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import styles from './ContactListItem.module.css';
 
 import { deleteContact } from 'redux/contactsSlice';
@@ -16,8 +15,4 @@ export const ContactListItem = ({ contact }) => {
       </button>
     </li>
   );
-};
-
-ContactListItem.propTypes = {
-  contact: PropTypes.objectOf(PropTypes.string).isRequired,
 };
